@@ -15,6 +15,9 @@
 		D135B18623A9FB7300389299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D135B18423A9FB7300389299 /* LaunchScreen.storyboard */; };
 		D135B19123A9FB7300389299 /* testCallotherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135B19023A9FB7300389299 /* testCallotherAppTests.swift */; };
 		D135B19C23A9FB7300389299 /* testCallotherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D135B19B23A9FB7300389299 /* testCallotherAppUITests.swift */; };
+		D13D6DAB23AB6A7600429BA4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D6DAA23AB6A7600429BA4 /* ShareViewController.swift */; };
+		D13D6DAE23AB6A7900429BA4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13D6DAC23AB6A7900429BA4 /* MainInterface.storyboard */; };
+		D13D6DB223AB6A7A00429BA4 /* share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D13D6DA823AB6A7400429BA4 /* share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = D135B17523A9FB7000389299;
 			remoteInfo = testCallotherApp;
 		};
+		D13D6DB023AB6A7A00429BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D135B16E23A9FB7000389299 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13D6DA723AB6A7400429BA4;
+			remoteInfo = share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D13D6DB323AB6A7A00429BA4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D13D6DB223AB6A7A00429BA4 /* share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D135B17623A9FB7000389299 /* testCallotherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCallotherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +73,12 @@
 		D135B19723A9FB7300389299 /* testCallotherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCallotherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D135B19B23A9FB7300389299 /* testCallotherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCallotherAppUITests.swift; sourceTree = "<group>"; };
 		D135B19D23A9FB7300389299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13D6DA823AB6A7400429BA4 /* share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13D6DAA23AB6A7600429BA4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		D13D6DAD23AB6A7900429BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D13D6DAF23AB6A7A00429BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13D6DB723AB6B2C00429BA4 /* testCallotherAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testCallotherAppRelease.entitlements; sourceTree = "<group>"; };
+		D13D6DB823AB6BEC00429BA4 /* shareRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shareRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D13D6DA523AB6A7400429BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +119,7 @@
 				D135B17823A9FB7000389299 /* testCallotherApp */,
 				D135B18F23A9FB7300389299 /* testCallotherAppTests */,
 				D135B19A23A9FB7300389299 /* testCallotherAppUITests */,
+				D13D6DA923AB6A7500429BA4 /* share */,
 				D135B17723A9FB7000389299 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +130,7 @@
 				D135B17623A9FB7000389299 /* testCallotherApp.app */,
 				D135B18C23A9FB7300389299 /* testCallotherAppTests.xctest */,
 				D135B19723A9FB7300389299 /* testCallotherAppUITests.xctest */,
+				D13D6DA823AB6A7400429BA4 /* share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +138,7 @@
 		D135B17823A9FB7000389299 /* testCallotherApp */ = {
 			isa = PBXGroup;
 			children = (
+				D13D6DB723AB6B2C00429BA4 /* testCallotherAppRelease.entitlements */,
 				D135B17923A9FB7000389299 /* AppDelegate.swift */,
 				D135B17B23A9FB7000389299 /* SceneDelegate.swift */,
 				D135B17D23A9FB7000389299 /* ViewController.swift */,
@@ -128,6 +168,17 @@
 			path = testCallotherAppUITests;
 			sourceTree = "<group>";
 		};
+		D13D6DA923AB6A7500429BA4 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				D13D6DB823AB6BEC00429BA4 /* shareRelease.entitlements */,
+				D13D6DAA23AB6A7600429BA4 /* ShareViewController.swift */,
+				D13D6DAC23AB6A7900429BA4 /* MainInterface.storyboard */,
+				D13D6DAF23AB6A7A00429BA4 /* Info.plist */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +189,12 @@
 				D135B17223A9FB7000389299 /* Sources */,
 				D135B17323A9FB7000389299 /* Frameworks */,
 				D135B17423A9FB7000389299 /* Resources */,
+				D13D6DB323AB6A7A00429BA4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D13D6DB123AB6A7A00429BA4 /* PBXTargetDependency */,
 			);
 			name = testCallotherApp;
 			productName = testCallotherApp;
@@ -184,6 +237,23 @@
 			productReference = D135B19723A9FB7300389299 /* testCallotherAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D13D6DA723AB6A7400429BA4 /* share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13D6DB623AB6A7A00429BA4 /* Build configuration list for PBXNativeTarget "share" */;
+			buildPhases = (
+				D13D6DA423AB6A7400429BA4 /* Sources */,
+				D13D6DA523AB6A7400429BA4 /* Frameworks */,
+				D13D6DA623AB6A7400429BA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = share;
+			productName = share;
+			productReference = D13D6DA823AB6A7400429BA4 /* share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +275,9 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = D135B17523A9FB7000389299;
 					};
+					D13D6DA723AB6A7400429BA4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = D135B17123A9FB7000389299 /* Build configuration list for PBXProject "testCallotherApp" */;
@@ -223,6 +296,7 @@
 				D135B17523A9FB7000389299 /* testCallotherApp */,
 				D135B18B23A9FB7300389299 /* testCallotherAppTests */,
 				D135B19623A9FB7300389299 /* testCallotherAppUITests */,
+				D13D6DA723AB6A7400429BA4 /* share */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +323,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13D6DA623AB6A7400429BA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13D6DAE23AB6A7900429BA4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +363,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D13D6DA423AB6A7400429BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13D6DAB23AB6A7600429BA4 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +383,11 @@
 			isa = PBXTargetDependency;
 			target = D135B17523A9FB7000389299 /* testCallotherApp */;
 			targetProxy = D135B19823A9FB7300389299 /* PBXContainerItemProxy */;
+		};
+		D13D6DB123AB6A7A00429BA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13D6DA723AB6A7400429BA4 /* share */;
+			targetProxy = D13D6DB023AB6A7A00429BA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +406,14 @@
 				D135B18523A9FB7300389299 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D13D6DAC23AB6A7900429BA4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13D6DAD23AB6A7900429BA4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +536,7 @@
 		D135B1A123A9FB7300389299 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R9NA68S2R;
@@ -441,7 +545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blabla.testCallotherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareddemo.shar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,7 +555,9 @@
 		D135B1A223A9FB7300389299 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testCallotherApp/testCallotherAppRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R9NA68S2R;
 				INFOPLIST_FILE = testCallotherApp/Info.plist;
@@ -459,7 +565,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blabla.testCallotherApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareddemo.shar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,6 +656,45 @@
 			};
 			name = Release;
 		};
+		D13D6DB423AB6A7A00429BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R9NA68S2R;
+				INFOPLIST_FILE = share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareddemo.shar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13D6DB523AB6A7A00429BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = share/shareRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R9NA68S2R;
+				INFOPLIST_FILE = share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shareddemo.shar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +730,15 @@
 			buildConfigurations = (
 				D135B1A723A9FB7300389299 /* Debug */,
 				D135B1A823A9FB7300389299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13D6DB623AB6A7A00429BA4 /* Build configuration list for PBXNativeTarget "share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13D6DB423AB6A7A00429BA4 /* Debug */,
+				D13D6DB523AB6A7A00429BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

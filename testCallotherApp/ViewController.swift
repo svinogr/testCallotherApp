@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         let aplication = UIApplication.shared
         let secApp = "editorChords://?getImage=true"
         let url = URL(string: secApp)!
-        let urlComp = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        _ = URLComponents(url: url, resolvingAgainstBaseURL: true)
       
         
         if aplication.canOpenURL(url) {
@@ -28,9 +28,26 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        featch()
         // Do any additional setup after loading the view.
     }
 
-
+    func featch() {
+        if let prefs = UserDefaults(suiteName: "group.com.shareddemo.shar"){
+            if let imageData = prefs.object(forKey:    "Image") as? NSData{
+                DispatchQueue.main.async(execute: {() -> Void in
+                        self.imageView.image = UIImage(data: imageData as Data)
+                    }
+                        
+                    )
+                    
+                }
+        }
+    }
+    
+   
 }
+    
+
+
 
